@@ -68,6 +68,6 @@ class Quiz(models.Model):
     choice_five = models.CharField(max_length = 200)
     answer = models.CharField(max_length = 200)
     
-  class mycourses(models.Model):
+class mycourses(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
